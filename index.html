@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Секондхенд-витрина</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/second-by-kxtss/static/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Витрина</h1>
+            <p class="site-subtitle">Стильные вещи с историей</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="status-notice" id="status-notice" style="display: none;">
+            Не удалось загрузить статусы. Уточняйте наличие.
+        </div>
+
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="available">Доступно</button>
+            <button class="filter-btn" data-filter="reserved">Забронировано</button>
+            <button class="filter-btn" data-filter="sold">Продано</button>
+        </div>
+
+        <div class="catalog-grid" id="catalog">
+            
+        <article class="item-card" data-slug="denim-jacket">
+            <a href="/second-by-kxtss/items/denim-jacket/" class="item-card-link">
+                <img src="/second-by-kxtss/items/denim-jacket/photo-1.png" alt="Джинсовая куртка Levi's" class="item-card-photo" loading="lazy">
+                <div class="item-card-body">
+                    <div class="item-card-top">
+                        <h2 class="item-card-title">Джинсовая куртка Levi's</h2>
+                        <span class="status-badge" data-slug="denim-jacket">Доступно</span>
+                    </div>
+                    <div class="item-card-info">
+                        <span class="item-card-price" data-slug="denim-jacket">3 500 &#8381;</span>
+                        <span class="item-card-size">M</span>
+                    </div>
+                </div>
+            </a>
+            <a href="https://t.me/second_by_kxtss_bot?start=denim-jacket" class="item-card-reserve" data-slug="denim-jacket">Забронировать</a>
+        </article>
+
+        <article class="item-card" data-slug="example-dress">
+            <a href="/second-by-kxtss/items/example-dress/" class="item-card-link">
+                <img src="/second-by-kxtss/items/example-dress/photo-1.png" alt="Синее платье H&amp;M" class="item-card-photo" loading="lazy">
+                <div class="item-card-body">
+                    <div class="item-card-top">
+                        <h2 class="item-card-title">Синее платье H&amp;M</h2>
+                        <span class="status-badge" data-slug="example-dress">Доступно</span>
+                    </div>
+                    <div class="item-card-info">
+                        <span class="item-card-price" data-slug="example-dress">1 500 &#8381;</span>
+                        <span class="item-card-size">S</span>
+                    </div>
+                </div>
+            </a>
+            <a href="https://t.me/second_by_kxtss_bot?start=example-dress" class="item-card-reserve" data-slug="example-dress">Забронировать</a>
+        </article>
+
+        <article class="item-card" data-slug="leather-bag">
+            <a href="/second-by-kxtss/items/leather-bag/" class="item-card-link">
+                <img src="/second-by-kxtss/items/leather-bag/photo-1.png" alt="Кожаная сумка Zara" class="item-card-photo" loading="lazy">
+                <div class="item-card-body">
+                    <div class="item-card-top">
+                        <h2 class="item-card-title">Кожаная сумка Zara</h2>
+                        <span class="status-badge" data-slug="leather-bag">Доступно</span>
+                    </div>
+                    <div class="item-card-info">
+                        <span class="item-card-price" data-slug="leather-bag">1 800 &#8381;</span>
+                        
+                    </div>
+                </div>
+            </a>
+            <a href="https://t.me/second_by_kxtss_bot?start=leather-bag" class="item-card-reserve" data-slug="leather-bag">Забронировать</a>
+        </article>
+
+        <article class="item-card" data-slug="silk-blouse">
+            <a href="/second-by-kxtss/items/silk-blouse/" class="item-card-link">
+                <img src="/second-by-kxtss/items/silk-blouse/photo-1.png" alt="Шёлковая блузка Massimo Dutti" class="item-card-photo" loading="lazy">
+                <div class="item-card-body">
+                    <div class="item-card-top">
+                        <h2 class="item-card-title">Шёлковая блузка Massimo Dutti</h2>
+                        <span class="status-badge" data-slug="silk-blouse">Доступно</span>
+                    </div>
+                    <div class="item-card-info">
+                        <span class="item-card-price" data-slug="silk-blouse">2 200 &#8381;</span>
+                        <span class="item-card-size">S</span>
+                    </div>
+                </div>
+            </a>
+            <a href="https://t.me/second_by_kxtss_bot?start=silk-blouse" class="item-card-reserve" data-slug="silk-blouse">Забронировать</a>
+        </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Бронирование через Telegram</p>
+        </div>
+    </footer>
+
+    <script>window.__CONFIG__ = { API_URL: 'http://localhost:8099', BOT_USERNAME: 'second_by_kxtss_bot' };</script>
+    <script src="/second-by-kxtss/static/main.js"></script>
+</body>
+</html>
